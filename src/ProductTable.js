@@ -102,14 +102,14 @@ export default function ProductTable() {
 
   return (
     <div className="container-fluid p-4">
-      {/* Navbar Section */}
+     
       <nav className="navbar navbar-expand-lg navbar-light bg-light mb-4">
         <div className="container-fluid" >
           <UserProfileDropdown />
         </div>
       </nav>
 
-      {/* Actions & Search Bar */}
+
       <div className="row mb-3">
         <div className="col-md-6">
           <Button type="primary" onClick={addInventory}>
@@ -126,7 +126,7 @@ export default function ProductTable() {
         </div>
       </div>
 
-      {/* Product Table */}
+     
       <Table
         columns={columns}
         dataSource={sortedProducts}
@@ -134,7 +134,7 @@ export default function ProductTable() {
         rowKey="id"
       />
 
-      {/* Inventory Modal */}
+    
       <InventoryModal
         isOpen={open}
         onClose={setOpen}
@@ -142,7 +142,7 @@ export default function ProductTable() {
         initialData={initialData}
       />
 
-      {/* Order Summary & Sales Chart */}
+    
       <div className="row mt-4">
         <div className="col-md-6">
           <OrderSummaryCard
