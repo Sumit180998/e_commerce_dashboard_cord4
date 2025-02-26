@@ -59,7 +59,7 @@ export default function ProductTable() {
     {
       title: "Product Image",
       dataIndex: "image",
-      render: (src) => <img src={src} alt="product" className="w-12 h-12" />,
+      render: (src) => <img src={src} alt="product"  width="80px"/>,
     },
     {
       title: "Product Name",
